@@ -1,1 +1,41 @@
-<p>contacto works!</p>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Tarea Formulario</title>
+</head>
+<body>
+   <h2>Formulario de Registro</h2>
+
+    <form action="/enviar-datos" method="POST">
+        <!-- Nombre Completo -->
+        <label for="nombre">Nombre Completo:</label><br>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+
+        <!-- Número de Identificación -->
+        <label for="id">Número de Identificación:</label><br>
+        <input type="number" id="id" name="identificacion" required><br><br>
+
+        <!-- Fecha de Nacimiento -->
+        <label for="nacimiento">Fecha de Nacimiento:</label><br>
+        <input type="date" id="nacimiento" name="fecha_nacimiento" required><br><br>
+
+        <!-- Estado Civil -->
+        <label>Estado Civil:</label><br>
+        <input type="radio" id="soltero" name="estado_civil" value="soltero">
+        <label for="soltero">Solter@</label><br>
+        <input type="radio" id="casado" name="estado_civil" value="casado">
+        <label for="casado">Casad@</label><br><br>
+
+        <!-- Checkbox de Política de Tratamiento de Datos -->
+        <input type="checkbox" id="politica" name="politica_datos" required>
+        <label for="politica">Acepto la política de tratamiento de datos (Ley 1581 de 2012)</label><br><br>
+
+        <!-- Botón de Envío -->
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
+
