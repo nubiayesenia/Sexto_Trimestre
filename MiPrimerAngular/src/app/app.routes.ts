@@ -1,8 +1,18 @@
 import { Routes } from '@angular/router';
-import {} from './pages/inicio/inicio';
-import {} from './pages/contacto/contacto';
-import {} from './pages/ejercicios/ejercicios';
+import {Inicio} from './pages/inicio/inicio';
+import {Contacto} from './pages/contacto/contacto';
+import {Ejercicios} from './pages/ejercicios/ejercicios';
 
-export const routes: Routes = [];
+export const routes: Routes = [
+    {
+        path: 'inicio',
+        component:Inicio
+    },
+    {
+        path: 'inicio',
+        component:Inicio
+    },
+];
+
 
  //
