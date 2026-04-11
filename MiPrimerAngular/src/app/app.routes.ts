@@ -9,8 +9,12 @@ export const routes: Routes = [
         component:Inicio
     },
     {
-        path: 'inicio',
-        component:Inicio
+        path: 'ejercicio',
+        component:Ejercicios
+    },
+    {
+        path: 'contacto',
+        component:Contacto
     },
 ];
 
